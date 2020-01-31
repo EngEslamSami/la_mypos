@@ -13,6 +13,12 @@ Route::prefix('dashboard')->name('dashboard.')->middleware(['auth'])->group(func
 Route::get('/index','DashboardController@index')->name('index');
 
 Route::resource('users','UserController')->except(['show']);
+
+  //category routes
+            Route::resource('categories', 'CategoryController')->except(['show']);
+
+
+
 });
 
 

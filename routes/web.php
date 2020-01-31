@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //eturn view('welcome');
+	return redirect()->route('dashboard.index');
 });
 
 Auth::routes();
