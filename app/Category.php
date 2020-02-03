@@ -10,9 +10,16 @@ class Category extends Model
 {
     use Translatable;
 
-    protected $guarded = [];
-    public $translatedAttributes = ['name'];
+
 	
+	protected $guarded = [];
+    public $translatedAttributes = ['name'];
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+
+    }//end of products
 	
 	
 	

@@ -17,9 +17,12 @@ Route::resource('users','UserController')->except(['show']);
   //category routes
             Route::resource('categories', 'CategoryController')->except(['show']);
 
+ //products routes
+            Route::resource('products', 'ProductController')->except(['show']);
 
 
-});
+
+  });
 
 
 
